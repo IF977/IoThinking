@@ -1,62 +1,15 @@
-<!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
-    
-    <%= stylesheet_link_tag "welcome.scss" %>
-    
-    <title>Bem vindo!</title>
+<h1>Bem vindo ao sistema!</h1>
 
-    <!-- Bootstrap core CSS 
-    <link href="./css/bootstrap.min.css" rel="stylesheet">-->
-    <%= stylesheet_link_tag "bootstrap#bootstrap.min.css" %>
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug 
-    <link href="./css/" rel="stylesheet">-->
-    <%= stylesheet_link_tag "bootstrap#ie10-viewport-bug-workaround.css" %>
-
-    <!-- Custom styles for this template 
-    <link href="./css/signin.css" rel="stylesheet">-->
-    <%= stylesheet_link_tag "bootstrap#signin.css" %>
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]
-    <script src="./js/ie-emulation-modes-warning.js"></script>-->
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
-  <body>
-
-    <div class="container" style="padding-top: 50px;">
-
-      <form class="form-signin" action="php/main.php" method="get" autocomplete="off">
-        <h2 class="form-signin-heading">Faça seu login</h2>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Login" required="" autofocus="" name="login">
-        <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required="" name="senha">
-        <div class="col-sm-6">
-        <a href="/new" style="color:white;"><button class="btn btn-lg btn-primary pull-left"  type="button">Cadastre-se</button></a>
-        </div>
-        <div class="col-sm-6">
-        <a href="/ambientes/index" style="color:white;"><button class="btn btn-lg btn-primary pull-right" type="button">Entre</button></a>
-        </div>
-        <div style="padding-top:50px; text-align:center;"><a href="/esqueci_senha1">Você esqueceu sua senha?</a></div>
-      </form>
-
-    </div> <!-- /container -->
-
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug 
-    <script src="./Signin Template for Bootstrap_files/ie10-viewport-bug-workaround.js"></script>-->
-  
-
-</body></html>
+<% if user_signed_in? %>
+  <ul>
+    <li><%= current_user.email %></li>
+    <li><%= link_to "Sair", destroy_user_session_path, method: :delete %></li>
+  </ul>
+<% else %>
+  <li><%= link_to "Cadastre-se", new_user_registration_path %></li>
+  <li><%= link_to "Logar", new_user_session_path %></li>
+<% end %>
+<ul>
+    <li><%= link_to 'Cadastrar ambiente', '/ambientes/new' %></li>
+    <li><%= link_to 'Meus ambientes', '/ambientes' %></li>
+</ul>
