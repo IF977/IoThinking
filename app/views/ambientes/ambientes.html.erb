@@ -1,0 +1,29 @@
+
+
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Ambientes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ambientes.each do |ambiente| %>
+      <tr>
+        <td><%= ambiente.name %></td>
+        <td><%= link_to 'Show', ambiente %></td>
+        <td><%= link_to 'Edit', edit_ambiente_path(ambiente) %></td>
+        <td><%= link_to 'Destroy', ambiente, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ambiente', new_ambiente_path %>
