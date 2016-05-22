@@ -13,3 +13,10 @@
  *= require_tree .
  *= require_self
  */
+@import "bootstrap";
+
+//Remove a cor azul e o sublinhamento dos links
+.remove_link, .remove_link:hover{
+    text-decoration:none;
+    color:black;
+}
