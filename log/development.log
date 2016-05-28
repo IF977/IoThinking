@@ -2307,3 +2307,279 @@ Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb062
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.240.0.186 at 2016-05-22 18:34:46 +0000
+
+
+Started GET "/" for 10.240.0.200 at 2016-05-28 20:14:06 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 677ms (Views: 659.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ambientes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.206 at 2016-05-28 20:14:07 +0000
+
+
+Started GET "/assets/bootstrap/ie10-viewport-bug-workaround.self-04e5869d2ba3db34a0e1fc661441a56fd50fd3989a32394e5a8e09320c22eb4a.css?body=1" for 10.240.0.197 at 2016-05-28 20:14:08 +0000
+
+
+Started GET "/assets/bootstrap/signin.self-c8e781e827400edc0661c7fe37e624bb0c325a2f68de9f913e85b1e71fa297d6.css?body=1" for 10.240.0.204 at 2016-05-28 20:14:08 +0000
+
+
+Started GET "/assets/clientes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.166 at 2016-05-28 20:14:08 +0000
+
+
+Started GET "/assets/scaffolds.self-d2e5ccad1506299feea3a35bfb7c525e101bb3b214303715deb675fdc539948b.css?body=1" for 10.240.0.192 at 2016-05-28 20:14:08 +0000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.75 at 2016-05-28 20:14:08 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 10.240.0.200 at 2016-05-28 20:14:08 +0000
+
+
+Started GET "/assets/bootstrap/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for 10.240.0.187 at 2016-05-28 20:14:08 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 10.240.0.186 at 2016-05-28 20:14:08 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 10.240.0.203 at 2016-05-28 20:14:08 +0000
+
+
+Started GET "/assets/turbolinks.self-c846e670826600e8c91b1a5ada3e6547110d996cd6ff24cde55024f7a135a1b4.js?body=1" for 10.240.0.200 at 2016-05-28 20:14:08 +0000
+
+
+Started GET "/assets/ambientes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.206 at 2016-05-28 20:14:08 +0000
+
+
+Started GET "/assets/clientes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.206 at 2016-05-28 20:14:08 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.206 at 2016-05-28 20:14:09 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.240.0.167 at 2016-05-28 20:14:09 +0000
+
+
+Started GET "/ambientes" for 10.240.0.200 at 2016-05-28 20:14:21 +0000
+Processing by AmbientesController#index as HTML
+Completed 401 Unauthorized in 11ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 10.240.0.207 at 2016-05-28 20:14:22 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-4.1.1/app/views/devise/shared/_links.html.erb (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-4.1.1/app/views/devise/sessions/new.html.erb within layouts/application (146.1ms)
+Completed 200 OK in 292ms (Views: 248.9ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/users/sign_in" for 10.240.0.200 at 2016-05-28 20:14:37 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EueGDoaEEmeDeDu24H8Vl+ZGDGWeB0IbhAGudkRPufCtQghZuLDkC6wkjSLuBCy4uh+L2HzaAwDVCUBHJRYEww==", "user"=>{"email"=>"ex102@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "ex102@example.com"]]
+Completed 401 Unauthorized in 32ms (ActiveRecord: 0.6ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EueGDoaEEmeDeDu24H8Vl+ZGDGWeB0IbhAGudkRPufCtQghZuLDkC6wkjSLuBCy4uh+L2HzaAwDVCUBHJRYEww==", "user"=>{"email"=>"ex102@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-4.1.1/app/views/devise/shared/_links.html.erb (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-4.1.1/app/views/devise/sessions/new.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 298ms (Views: 69.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 10.240.0.206 at 2016-05-28 20:14:39 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-4.1.1/app/views/devise/shared/_links.html.erb (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-4.1.1/app/views/devise/registrations/new.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 129ms (Views: 125.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 10.240.0.200 at 2016-05-28 20:14:51 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GwHI0z41b0mEOxB47My0kx3hanOysjcK7wqpggVHU9OkpEaEAAGZJatnpuzit428QbjtzlBvdhG+AkezZB7u4A==", "user"=>{"email"=>"ex102@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ex102@example.com' LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "ex102@example.com"], ["encrypted_password", "$2a$11$94A5ZUUOJIXNw8r2WpzdS.RNZFRN7gVsTCOxQKQFuB0W3VFG.aF6i"], ["created_at", "2016-05-28 20:14:52.210487"], ["updated_at", "2016-05-28 20:14:52.210487"]]
+  [1m[35m (27.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2016-05-28 20:14:52.242559"], ["current_sign_in_at", "2016-05-28 20:14:52.242559"], ["last_sign_in_ip", "10.240.0.200"], ["current_sign_in_ip", "10.240.0.200"], ["sign_in_count", 1], ["updated_at", "2016-05-28 20:14:52.244009"], ["id", 2]]
+  [1m[36m (28.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://projdef2-fernando202.c9users.io:8080/ambientes
+Completed 302 Found in 337ms (ActiveRecord: 58.0ms)
+
+
+Started GET "/ambientes" for 10.240.0.200 at 2016-05-28 20:14:52 +0000
+Processing by AmbientesController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mAmbiente Load (0.3ms)[0m  [1mSELECT "ambientes".* FROM "ambientes"[0m
+  Rendered ambientes/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 60ms (Views: 53.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 10.240.0.206 at 2016-05-28 20:15:01 +0000
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered welcome/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 45ms (Views: 43.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ambientes" for 10.240.0.204 at 2016-05-28 20:15:04 +0000
+Processing by AmbientesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mAmbiente Load (0.3ms)[0m  SELECT "ambientes".* FROM "ambientes"
+  Rendered ambientes/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 63ms (Views: 60.2ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/ambientes/3" for 10.240.0.110 at 2016-05-28 20:15:07 +0000
+Processing by AmbientesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Hlz7PYC40QzELgQansizCvy3gfkvKg5OrT8wiZQEEtih+XVqvownYOtyso6Qs4oloO4GRM33T1X8N9649V2v6w==", "id"=>"3"}
+  [1m[36mAmbiente Load (0.4ms)[0m  [1mSELECT  "ambientes".* FROM "ambientes" WHERE "ambientes"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "ambientes" WHERE "ambientes"."id" = ?  [["id", 3]]
+  [1m[36m (11.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://projdef2-fernando202.c9users.io:8080/ambientes
+Completed 302 Found in 24ms (ActiveRecord: 12.8ms)
+
+
+Started GET "/ambientes" for 10.240.0.203 at 2016-05-28 20:15:08 +0000
+Processing by AmbientesController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mAmbiente Load (0.4ms)[0m  [1mSELECT "ambientes".* FROM "ambientes"[0m
+  Rendered ambientes/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 72ms (Views: 67.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 10.240.0.200 at 2016-05-28 20:15:13 +0000
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered welcome/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 62ms (Views: 60.5ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/sign_out" for 10.240.0.200 at 2016-05-28 20:15:22 +0000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"MeGt2vAl9hS4k3Tt/bJSee4Zl5xFmLgMTxQ08vyy6+CORCONzhEAeJfPwnnzyWtWskAQIadF+RceHNrDnetW0w=="}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://projdef2-fernando202.c9users.io:8080/
+Completed 302 Found in 64ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.240.0.167 at 2016-05-28 20:15:23 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 44ms (Views: 43.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.0.207 at 2016-05-28 20:17:30 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 479ms (Views: 457.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ambientes" for 10.240.0.207 at 2016-05-28 20:17:35 +0000
+Processing by AmbientesController#index as HTML
+Completed 401 Unauthorized in 7ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 10.240.0.207 at 2016-05-28 20:17:36 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (2.1ms)
+  Rendered users/sessions/new.html.erb within layouts/application (108.9ms)
+Completed 200 OK in 184ms (Views: 162.9ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/users/sign_in" for 10.240.0.179 at 2016-05-28 20:17:54 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8sz+onrcow+pCa7Is1K8pMyTtTqMxfgCiZBoRt2bNyTPEv7oVADAIHG6C8nCkXl+EJy5OnhiXQ5+4voEGUiwMg==", "user"=>{"email"=>"ex102@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "ex102@example.com"]]
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["current_sign_in_at", "2016-05-28 20:17:54.373477"], ["current_sign_in_ip", "10.240.0.179"], ["sign_in_count", 2], ["updated_at", "2016-05-28 20:17:54.376301"], ["id", 2]]
+  [1m[36m (13.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://projdef2-fernando202.c9users.io:8080/ambientes
+Completed 302 Found in 292ms (ActiveRecord: 15.0ms)
+
+
+Started GET "/ambientes" for 10.240.0.208 at 2016-05-28 20:17:54 +0000
+Processing by AmbientesController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mAmbiente Load (0.3ms)[0m  [1mSELECT "ambientes".* FROM "ambientes"[0m
+  Rendered ambientes/index.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 93ms (Views: 85.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 10.240.0.75 at 2016-05-28 20:18:06 +0000
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered welcome/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 139ms (Views: 137.9ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/sign_out" for 10.240.0.206 at 2016-05-28 20:18:08 +0000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"diEF7hA+KMf/k/OEhCe73Dw7Y9vUjZ5yAJCmvJPVI6UCRsYAfBlMgeZw5q7zkHphHrP0ZEnjtOdIGX6v7DwPVg=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://projdef2-fernando202.c9users.io:8080/
+Completed 302 Found in 15ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 10.240.0.203 at 2016-05-28 20:18:09 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 78ms (Views: 74.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 10.240.0.192 at 2016-05-28 20:18:13 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered users/shared/_links.html.erb (0.5ms)
+  Rendered users/registrations/new.html.erb within layouts/application (87.6ms)
+Completed 200 OK in 158ms (Views: 156.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 10.240.0.200 at 2016-05-28 20:18:33 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TO9EXtR08o+IpmHDA/qqT5s1+VRzaxX90SCHVYGSmzMkWX6wxW/KSpVfLRwrYRMP5ITlxnCnhKhGCqXFHgbxQw==", "user"=>{"email"=>"ex103@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ex103@example.com' LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["email", "ex103@example.com"], ["encrypted_password", "$2a$11$mnEF3v6AtDrfoEMnAjkLyeA.pWqm.01E270NzRWIickUSyJSOKfcG"], ["created_at", "2016-05-28 20:18:33.548514"], ["updated_at", "2016-05-28 20:18:33.548514"]]
+  [1m[36m (16.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2016-05-28 20:18:33.568498"], ["current_sign_in_at", "2016-05-28 20:18:33.568498"], ["last_sign_in_ip", "10.240.0.200"], ["current_sign_in_ip", "10.240.0.200"], ["sign_in_count", 1], ["updated_at", "2016-05-28 20:18:33.569712"], ["id", 3]]
+  [1m[35m (8.1ms)[0m  commit transaction
+Redirected to http://projdef2-fernando202.c9users.io:8080/
+Completed 302 Found in 229ms (ActiveRecord: 26.5ms)
+
+
+Started GET "/" for 10.240.0.208 at 2016-05-28 20:18:33 +0000
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered welcome/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 57ms (Views: 55.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ambientes" for 10.240.0.179 at 2016-05-28 20:18:37 +0000
+Processing by AmbientesController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mAmbiente Load (0.3ms)[0m  [1mSELECT "ambientes".* FROM "ambientes"[0m
+  Rendered ambientes/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 61ms (Views: 57.9ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/users/sign_out" for 10.240.0.203 at 2016-05-28 20:18:46 +0000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4ur8DZe0z2p2flNfisseUTPTZSjpaAJPmlBXSSaFXhuKXMbjhq/3r2uHH4CiUKcRTGJ5uuqkkxoNenXZuRE0aw=="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  commit transaction
+Redirected to http://projdef2-fernando202.c9users.io:8080/
+Completed 302 Found in 7ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 10.240.0.192 at 2016-05-28 20:18:46 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 70ms (Views: 69.3ms | ActiveRecord: 0.0ms)
