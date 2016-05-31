@@ -6,8 +6,10 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
+  
   root 'welcome#index'
   
+  get '/menu_index' => 'welcome#menu_index'
   get '/new' => 'ambientes#new'
   get '/ambientes/index' => 'ambientes#index'
   

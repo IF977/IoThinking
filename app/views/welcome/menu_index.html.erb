@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+    
+        <title>IoThinking</title>
+    
+        <!-- Custom CSS -->
+        <link href="css/scrolling-nav.css" rel="stylesheet">
+            
+        <%= stylesheet_link_tag "welcome.scss" %>
+        <%= stylesheet_link_tag "bootstrap.min.css" %>
+        <%= stylesheet_link_tag "scrolling-nav.css" %>
+        
+        <title>Bem vindo!</title>
+        
+        <%= javascript_include_tag "jquery.js" %>
+        <%= javascript_include_tag "bootstrap.min.js" %>
+        <%= javascript_include_tag "jquery.easing.min.js" %>
+        <%= javascript_include_tag "scrolling-nav.js" %>
+        
+    
+    </head>
+
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Ambientes</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from dicas link when scrolled up past dicas section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#dicas">Dicas</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#historico">Histórico</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#comprar">Comprar</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contato</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Section -->
+    <section id="intro" class="intro-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>TEMPLATE MASSA!!!</h1>
+                    <p>ESSA É A TELA DE AMBIENTES</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- dicas Section -->
+    <section id="dicas" class="dicas-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>TEMPLATE MASSA!!!</h1>
+                    <p>ESSA É A TELA DE DICAS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- historico Section -->
+    <section id="historico" class="historico-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>TEMPLATE MASSA!!!</h1>
+                    <p>ESSA É A TELA DE HISTÓRICO - FEATURE</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="comprar" class="comprar-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>TEMPLATE MASSA!!!</h1>
+                    <p>ESSA É A TELA DE COMPRAR</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>TEMPLATE MASSA!!!</h1>
+                    <p>ESSA É A TELA DE CONTATO</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </body>
+</html>
+<h1>PRECISO REDIRECIONAR PARA A PÁGINA DE INICIO</h1>
+    
+<ul>
+    <li><%= current_user.email %></li>
+    <li><%= link_to "Sair", destroy_user_session_path, method: :delete %></li>
+</ul>

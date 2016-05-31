@@ -1,3 +1,26 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.btn-tam {
+    width: 45%
+}
+.btn-cor-enviar {
+    color: #fff;
+    background-color: #009900;
+    border-color: #2e6da4
+}
+.btn-cor-enviar.focus,
+.btn-cor-enviar:focus {
+    color: #fff;
+    background-color: #006600;
+    border-color: #122b40
+}
+.btn-cor-enviar:hover {
+    color: #fff;
+    background-color: #006600;
+    border-color: #204d74
+}
+
+.color-text{
+    color: #fff;
+}

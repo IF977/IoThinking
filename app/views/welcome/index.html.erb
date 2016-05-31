@@ -1,3 +1,56 @@
+
+<%
+=begin %> <!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
+    
+    <%= stylesheet_link_tag "welcome.scss" %>
+    
+    <title>Bem vindo!</title>
+    
+    <%= stylesheet_link_tag "ie10-viewport-bug-workaround.css" %>
+    <%= stylesheet_link_tag "signin.css" %>
+    
+
+  </head>
+
+  <body>
+  <% if user_signed_in? %>
+    <h1>PRECISO REDIRECIONAR PARA A PÁGINA DE INICIO</h1>
+    
+    <ul>
+    <li><%= current_user.email %></li>
+    <li><%= link_to "Sair", destroy_user_session_path, method: :delete %></li>
+    </ul>
+  <% else %>
+    <div class="container" style="padding-top: 50px;">
+
+      <form class="form-signin" action="/users/sign_in" method="get" autocomplete="off">
+        <h2 class="form-signin-heading">Faça seu login</h2>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Login" required="" autofocus="" name="login">
+        <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required="" name="senha">
+        <%= link_to "Cadastre-se", new_user_registration_path, :class => "btn btn-lg btn-primary pull-left" %>
+        
+        <div class="actions">
+          <input type="submit" name="commit" value="Entrar" class="btn btn-tam btn-lg btn-cor-enviar pull-right color-text">
+        </div>
+        <div style="padding-top:50px; text-align:center;"><a href="/users/password/new">Você esqueceu sua senha?</a></div>
+      </form>
+    </div>
+  <% end %>
+  
+<form class="new_user" id="new_user" action="/users/sign_in" accept-charset="UTF-8" method="post">
+</body></html>
+
+<% 
+=end %>
+
 <h1>Bem vindo ao sistema!</h1>
 
 <% if user_signed_in? %>
@@ -13,3 +66,6 @@
     <li><%= link_to 'Cadastrar ambiente', '/ambientes/new' %></li>
     <li><%= link_to 'Meus ambientes', '/ambientes' %></li>
 </ul>
+
+
+

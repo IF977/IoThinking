@@ -1,26 +1,54 @@
-<h2>Log in</h2>
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
+    
+    <%= stylesheet_link_tag "welcome.scss" %>
+    
+    <title>Bem vindo!</title>
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
+    <%= stylesheet_link_tag "bootstrap.min.css" %>
+    <%= stylesheet_link_tag "ie10-viewport-bug-workaround.css" %>
+    <%= stylesheet_link_tag "signin.css" %>
 
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
+  </head>
 
-  <% if devise_mapping.rememberable? -%>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
+  <body>
+
+    <div class="container" style="padding-top: 50px;">
+      <h2 align="center">Faça seu login</h2>
+      <%= form_for(resource, :html => {:class => "form-signin"}, as: resource_name, url: session_path(resource_name)) do |f| %>
+        <div class="field">
+          <%= f.email_field :email, autofocus: true, autocomplete: "off", :class => "form-control", :placeholder => "E-mail"%>
+        </div>
+      
+        <div class="field" style="margin-top:-11px;">
+          <%= f.password_field :password, autocomplete: "off", :class => "form-control", :placeholder => "Senha" %>
+        </div>
+      
+        <% if devise_mapping.rememberable? -%>
+          <div class="field">
+            <%= f.check_box :remember_me %>
+            <%= f.label :remember_me %>
+          </div>
+        <% end -%>
+        
+        <%= link_to "Cadastre-se", new_user_registration_path, :class => "btn btn-lg btn-primary pull-left", :style => "color:white;" %>
+        
+        <div class="actions">
+          <%= f.submit "Entrar", :class => "btn btn-tam btn-lg btn-cor-enviar pull-right" %>
+        </div>
+        
+       <div style="padding-top:50px; text-align:center;"><a href="/users/password/new">Você esqueceu sua senha?</a></div>
+      <% end %>
+      
     </div>
-  <% end -%>
 
-  <div class="actions">
-    <%= f.submit "Log in" %>
-  </div>
-<% end %>
+</body></html>
 
-<%= render "users/shared/links" %>
+
