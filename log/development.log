@@ -25904,3 +25904,1342 @@ Processing by StaticPagesController#tutorial as HTML
   Rendered layouts/_footer.html.erb (0.2ms)
 Completed 200 OK in 59ms (Views: 57.8ms | ActiveRecord: 0.2ms)
 >>>>>>> d8d82aafc431a1776c5cd7e3ae12d875249984af
+
+
+Started GET "/" for 10.240.0.204 at 2016-06-01 22:34:43 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_header.html.erb (36.4ms)
+Completed 500 Internal Server Error in 3379ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `login_path' for #<#<Class:0x0000000401b1a8>:0x00000004019b50>):
+    24:           </li>
+    25:         <% else %>
+    26:         <li><%= link_to "Cadastre-se",  new_user_registration_path %></li>
+    27:         <li><%= link_to "Logar",        new_user_session_path %></li>
+    28:         <li><%= link_to "Log in",       login_path %></li>
+    29:         <% end %>
+    30:       </ul>
+  app/views/layouts/_header.html.erb:27:in `_app_views_layouts__header_html_erb___2458564759031115682_70250921978880'
+  app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb___2036828606385745719_70250903013200'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (9.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (162.7ms)
+
+
+Started GET "/" for 10.240.0.204 at 2016-06-01 22:39:34 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (7.6ms)
+  Rendered layouts/_header.html.erb (79.3ms)
+Completed 500 Internal Server Error in 901ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `login_path' for #<#<Class:0x007f750838e300>:0x007f750838d658>):
+    24:           </li>
+    25:         <% else %>
+    26:         <li><%= link_to "Cadastre-se",  new_user_registration_path %></li>
+    27:         <li><%= link_to "Logar",        new_user_session_path %></li>
+    28:         <li><%= link_to "Log in",       login_path %></li>
+    29:         <% end %>
+    30:       </ul>
+  app/views/layouts/_header.html.erb:27:in `_app_views_layouts__header_html_erb___590970573115680553_70070315950860'
+  app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb__199857956456433382_70070313054280'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (7.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (6.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (135.4ms)
+
+
+Started GET "/" for 10.240.0.186 at 2016-06-01 22:40:03 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (63.1ms)
+Completed 500 Internal Server Error in 165ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `login_path' for #<#<Class:0x007f750838e300>:0x007f750a386c98>):
+    24:           </li>
+    25:         <% else %>
+    26:         <li><%= link_to "Cadastre-se",  new_user_registration_path %></li>
+    27:         <li><%= link_to "Logar",        new_user_session_path %></li>
+    28:         <li><%= link_to "Log in",       login_path %></li>
+    29:         <% end %>
+    30:       </ul>
+  app/views/layouts/_header.html.erb:27:in `_app_views_layouts__header_html_erb___590970573115680553_70070315950860'
+  app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb__199857956456433382_70070313054280'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (8.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (12.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (7.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (151.4ms)
+
+
+Started GET "/" for 10.240.0.241 at 2016-06-01 22:43:46 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 88ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Missing partial layouts/_header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates"
+  * "/home/ubuntu/workspace/app/views"
+  * "/usr/local/rvm/gems/ruby-2.3.0/gems/devise-4.1.1/app/views"
+):
+     8:     <%= csrf_meta_tags %>
+     9:   </head>
+    10:   <body>
+    11:     <%= render 'layouts/header' =%>
+    12:     <div class="container">
+    13:       <%= yield %>
+    14:       <%= render 'layouts/footer' %>
+  app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb__199857956456433382_70070313054280'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (9.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (116.1ms)
+
+
+Started GET "/" for 10.240.0.207 at 2016-06-01 22:44:31 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 134ms (Views: 133.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ambientes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.186 at 2016-06-01 22:44:31 +0000
+
+
+Started GET "/assets/bootstrap/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for 10.240.0.207 at 2016-06-01 22:44:31 +0000
+
+
+Started GET "/assets/bootstrap.min.self-8e2e0f28b8f446fca1121ab03f5689b5e5b48e8babcbf10b2f56ee22a11474b1.css?body=1" for 10.240.0.208 at 2016-06-01 22:44:31 +0000
+
+
+Started GET "/assets/bootstrap/ie10-viewport-bug-workaround.self-04e5869d2ba3db34a0e1fc661441a56fd50fd3989a32394e5a8e09320c22eb4a.css?body=1" for 10.240.0.186 at 2016-06-01 22:44:31 +0000
+
+
+Started GET "/assets/bootstrap/signin.self-c8e781e827400edc0661c7fe37e624bb0c325a2f68de9f913e85b1e71fa297d6.css?body=1" for 10.240.0.110 at 2016-06-01 22:44:31 +0000
+
+
+Started GET "/assets/clientes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.179 at 2016-06-01 22:44:31 +0000
+
+
+Started GET "/assets/custom.self-bc02fbb8511f43508160a403359d968c324f6ec5566edd30185b94786ff7718b.css?body=1" for 10.240.0.200 at 2016-06-01 22:44:31 +0000
+
+
+Started GET "/assets/ie10-viewport-bug-workaround.self-04e5869d2ba3db34a0e1fc661441a56fd50fd3989a32394e5a8e09320c22eb4a.css?body=1" for 10.240.0.208 at 2016-06-01 22:44:32 +0000
+
+
+Started GET "/assets/scrolling-nav.self-a3bbef7e8bde9ef8e96ddf46180cc817ce5df552a59f81904d15f09a0cb1745f.css?body=1" for 10.240.0.186 at 2016-06-01 22:44:32 +0000
+
+
+Started GET "/assets/scaffolds.self-77bed466863b50f44a06b6f43397d964d274d5ec1d7aad5974e3ed329dc2bb4e.css?body=1" for 10.240.0.192 at 2016-06-01 22:44:32 +0000
+
+
+Started GET "/assets/signin.self-c8e781e827400edc0661c7fe37e624bb0c325a2f68de9f913e85b1e71fa297d6.css?body=1" for 10.240.0.186 at 2016-06-01 22:44:32 +0000
+
+
+Started GET "/assets/welcome.self-227fd54cd43a6c427a1130e903b8c9391ad707302887aa7dc4b2e9f32f1a0c3a.css?body=1" for 10.240.0.207 at 2016-06-01 22:44:32 +0000
+
+
+Started GET "/assets/application.self-4aa04400b4d301ab6e434e640d7da5ebdac97b69e18853cb790aa8b891af3d08.css?body=1" for 10.240.0.186 at 2016-06-01 22:44:32 +0000
+
+
+Started GET "/assets/jquery.self-aedf0b4f9535e7b1d01d6a9ad81e6ecdb5b9a82acf17f3798645b7dbca2d86a1.js?body=1" for 10.240.0.186 at 2016-06-01 22:44:32 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 10.240.0.208 at 2016-06-01 22:44:32 +0000
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 10.240.0.208 at 2016-06-01 22:44:32 +0000
+
+
+Started GET "/assets/turbolinks.self-c846e670826600e8c91b1a5ada3e6547110d996cd6ff24cde55024f7a135a1b4.js?body=1" for 10.240.0.186 at 2016-06-01 22:44:32 +0000
+
+
+Started GET "/assets/ambientes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.187 at 2016-06-01 22:44:32 +0000
+
+
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for 10.240.0.207 at 2016-06-01 22:44:32 +0000
+
+
+Started GET "/assets/clientes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.186 at 2016-06-01 22:44:32 +0000
+
+
+Started GET "/assets/jquery.easing.min.self-17a01b6a2de1310e5b07a3fb735edcdccda497533463b31da3a352c81a6f3430.js?body=1" for 10.240.0.186 at 2016-06-01 22:44:32 +0000
+
+
+Started GET "/assets/scrolling-nav.self-3d5a6042f3bbecc36d4f8fbc63160a05d7335f7caeb208e6e07cfa0a707ab79f.js?body=1" for 10.240.0.186 at 2016-06-01 22:44:33 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.75 at 2016-06-01 22:44:33 +0000
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 10.240.0.186 at 2016-06-01 22:44:33 +0000
+
+
+Started GET "/assets/bootstrap-sprockets" for 10.240.0.179 at 2016-06-01 22:44:33 +0000
+
+
+Started GET "/assets/bootstrap" for 10.240.0.186 at 2016-06-01 22:44:33 +0000
+
+
+Started GET "/users/sign_in" for 10.240.0.186 at 2016-06-01 22:44:37 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (2.1ms)
+  Rendered users/sessions/new.html.erb within layouts/application (154.6ms)
+Completed 200 OK in 278ms (Views: 252.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/stylesheets/welcome.scss.css" for 10.240.0.207 at 2016-06-01 22:44:37 +0000
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/welcome.scss.css"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.11.1) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.1) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.1) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (6.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (161.9ms)
+
+
+Started POST "/users/sign_in" for 10.240.0.208 at 2016-06-01 22:45:02 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3h59h5ujSsNGtBbj1yxplNqxLErJ+c8WpeNGLJwrey37Bglyv2JmscuXg0P/jtj7vPoNWYxCr+gS+KS4HQ0uxg==", "user"=>{"email"=>"pedro.vinicius.batista@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "pedro.vinicius.batista@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2016-05-31 03:47:34.702695"], ["current_sign_in_at", "2016-06-01 22:45:02.325213"], ["last_sign_in_ip", "10.240.0.75"], ["current_sign_in_ip", "10.240.0.208"], ["sign_in_count", 15], ["updated_at", "2016-06-01 22:45:02.326868"], ["id", 4]]
+  [1m[36m (15.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://iothinking-es-pedroclericuzi1.c9users.io:8080/
+Completed 302 Found in 330ms (ActiveRecord: 16.8ms)
+
+
+Started GET "/" for 10.240.0.241 at 2016-06-01 22:45:02 +0000
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+Redirected to http://iothinking-es-pedroclericuzi1.c9users.io:8080/menu_index
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/menu_index" for 10.240.0.241 at 2016-06-01 22:45:02 +0000
+Processing by WelcomeController#menu_index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  Rendered welcome/menu_index.html.erb within layouts/application (44.0ms)
+Completed 200 OK in 120ms (Views: 119.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/css/scrolling-nav.css" for 10.240.0.241 at 2016-06-01 22:45:03 +0000
+
+ActionController::RoutingError (No route matches [GET] "/css/scrolling-nav.css"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.11.1) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.1) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.1) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (3.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (159.7ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for 10.240.0.203 at 2016-06-01 22:45:03 +0000
+
+
+Started GET "/assets/bootstrap" for 10.240.0.192 at 2016-06-01 22:45:03 +0000
+
+
+Started GET "/stylesheets/welcome.scss.css" for 10.240.0.204 at 2016-06-01 22:45:03 +0000
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/welcome.scss.css"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.11.1) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.1) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.1) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (3.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (6.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (176.2ms)
+
+
+Started DELETE "/users/sign_out" for 10.240.0.186 at 2016-06-01 22:45:44 +0000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"17zwIUYMSIdq5ITebi2fjKp0zHpXFwGAcZNQx703Ahs4ke5j+KBMn7ZUDX6Wx9ZIlrSPohf+jLjqjMpc6Oc4bA=="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://iothinking-es-pedroclericuzi1.c9users.io:8080/
+Completed 302 Found in 10ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 10.240.0.192 at 2016-06-01 22:45:44 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 95ms (Views: 93.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ambientes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.204 at 2016-06-01 22:45:45 +0000
+
+
+Started GET "/assets/bootstrap.min.self-8e2e0f28b8f446fca1121ab03f5689b5e5b48e8babcbf10b2f56ee22a11474b1.css?body=1" for 10.240.0.204 at 2016-06-01 22:45:45 +0000
+
+
+Started GET "/assets/bootstrap/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for 10.240.0.204 at 2016-06-01 22:45:45 +0000
+
+
+Started GET "/assets/bootstrap/ie10-viewport-bug-workaround.self-04e5869d2ba3db34a0e1fc661441a56fd50fd3989a32394e5a8e09320c22eb4a.css?body=1" for 10.240.0.241 at 2016-06-01 22:45:45 +0000
+
+
+Started GET "/assets/bootstrap/signin.self-c8e781e827400edc0661c7fe37e624bb0c325a2f68de9f913e85b1e71fa297d6.css?body=1" for 10.240.0.207 at 2016-06-01 22:45:45 +0000
+
+
+Started GET "/assets/custom.self-bc02fbb8511f43508160a403359d968c324f6ec5566edd30185b94786ff7718b.css?body=1" for 10.240.0.206 at 2016-06-01 22:45:45 +0000
+
+
+Started GET "/assets/clientes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.204 at 2016-06-01 22:45:45 +0000
+
+
+Started GET "/assets/ie10-viewport-bug-workaround.self-04e5869d2ba3db34a0e1fc661441a56fd50fd3989a32394e5a8e09320c22eb4a.css?body=1" for 10.240.0.241 at 2016-06-01 22:45:45 +0000
+
+
+Started GET "/assets/scaffolds.self-77bed466863b50f44a06b6f43397d964d274d5ec1d7aad5974e3ed329dc2bb4e.css?body=1" for 10.240.0.207 at 2016-06-01 22:45:45 +0000
+
+
+Started GET "/assets/scrolling-nav.self-a3bbef7e8bde9ef8e96ddf46180cc817ce5df552a59f81904d15f09a0cb1745f.css?body=1" for 10.240.0.241 at 2016-06-01 22:45:45 +0000
+
+
+Started GET "/assets/signin.self-c8e781e827400edc0661c7fe37e624bb0c325a2f68de9f913e85b1e71fa297d6.css?body=1" for 10.240.0.207 at 2016-06-01 22:45:45 +0000
+
+
+Started GET "/assets/welcome.self-227fd54cd43a6c427a1130e903b8c9391ad707302887aa7dc4b2e9f32f1a0c3a.css?body=1" for 10.240.0.187 at 2016-06-01 22:45:45 +0000
+
+
+Started GET "/assets/application.self-4aa04400b4d301ab6e434e640d7da5ebdac97b69e18853cb790aa8b891af3d08.css?body=1" for 10.240.0.207 at 2016-06-01 22:45:45 +0000
+
+
+Started GET "/assets/jquery.self-aedf0b4f9535e7b1d01d6a9ad81e6ecdb5b9a82acf17f3798645b7dbca2d86a1.js?body=1" for 10.240.0.207 at 2016-06-01 22:45:45 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 10.240.0.204 at 2016-06-01 22:45:45 +0000
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 10.240.0.207 at 2016-06-01 22:45:45 +0000
+
+
+Started GET "/assets/turbolinks.self-c846e670826600e8c91b1a5ada3e6547110d996cd6ff24cde55024f7a135a1b4.js?body=1" for 10.240.0.241 at 2016-06-01 22:45:45 +0000
+
+
+Started GET "/assets/ambientes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.203 at 2016-06-01 22:45:45 +0000
+
+
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for 10.240.0.204 at 2016-06-01 22:45:45 +0000
+
+
+Started GET "/assets/clientes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.241 at 2016-06-01 22:45:46 +0000
+
+
+Started GET "/assets/jquery.easing.min.self-17a01b6a2de1310e5b07a3fb735edcdccda497533463b31da3a352c81a6f3430.js?body=1" for 10.240.0.241 at 2016-06-01 22:45:46 +0000
+
+
+Started GET "/assets/scrolling-nav.self-3d5a6042f3bbecc36d4f8fbc63160a05d7335f7caeb208e6e07cfa0a707ab79f.js?body=1" for 10.240.0.204 at 2016-06-01 22:45:46 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.241 at 2016-06-01 22:45:46 +0000
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 10.240.0.208 at 2016-06-01 22:45:46 +0000
+
+
+Started GET "/assets/bootstrap-sprockets" for 10.240.0.204 at 2016-06-01 22:45:46 +0000
+
+
+Started GET "/assets/bootstrap" for 10.240.0.204 at 2016-06-01 22:45:46 +0000
+
+
+Started GET "/users/sign_in" for 10.240.0.207 at 2016-06-01 22:45:50 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (0.4ms)
+  Rendered users/sessions/new.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 112ms (Views: 110.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/welcome.scss.css" for 10.240.0.186 at 2016-06-01 22:45:50 +0000
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/welcome.scss.css"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.11.1) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.1) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.1) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (3.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (14.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (166.5ms)
+
+
+Started GET "/users/password/new" for 10.240.0.206 at 2016-06-01 22:46:10 +0000
+Processing by Devise::PasswordsController#new as HTML
+  Rendered users/shared/_links.html.erb (1.9ms)
+  Rendered users/passwords/new.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 137ms (Views: 135.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/welcome.scss.css" for 10.240.0.197 at 2016-06-01 22:46:14 +0000
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/welcome.scss.css"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.11.1) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.1) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.1) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (3.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (130.5ms)
+
+
+Started GET "/users/sign_up" for 10.240.0.189 at 2016-06-01 22:46:15 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered users/shared/_links.html.erb (0.3ms)
+  Rendered users/registrations/new.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 142ms (Views: 140.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/welcome.scss.css" for 10.240.0.186 at 2016-06-01 22:46:18 +0000
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/welcome.scss.css"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.11.1) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.1) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.1) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (3.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (173.4ms)
+
+
+Started GET "/users/password/new" for 10.240.0.186 at 2016-06-01 22:46:21 +0000
+Processing by Devise::PasswordsController#new as HTML
+  Rendered users/shared/_links.html.erb (3.5ms)
+  Rendered users/passwords/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 126ms (Views: 125.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/welcome.scss.css" for 10.240.0.187 at 2016-06-01 22:46:24 +0000
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/welcome.scss.css"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.11.1) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.1) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.1) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (18.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (3.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (13.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (130.6ms)
+
+
+Started GET "/users/sign_in" for 10.240.0.186 at 2016-06-01 22:47:45 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/sessions/new.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 105ms (Views: 104.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ambientes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.186 at 2016-06-01 22:47:46 +0000
+
+
+Started GET "/assets/bootstrap/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for 10.240.0.197 at 2016-06-01 22:47:46 +0000
+
+
+Started GET "/assets/bootstrap/ie10-viewport-bug-workaround.self-04e5869d2ba3db34a0e1fc661441a56fd50fd3989a32394e5a8e09320c22eb4a.css?body=1" for 10.240.0.208 at 2016-06-01 22:47:46 +0000
+
+
+Started GET "/assets/bootstrap/signin.self-c8e781e827400edc0661c7fe37e624bb0c325a2f68de9f913e85b1e71fa297d6.css?body=1" for 10.240.0.187 at 2016-06-01 22:47:46 +0000
+
+
+Started GET "/assets/clientes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.200 at 2016-06-01 22:47:46 +0000
+
+
+Started GET "/assets/custom.self-bc02fbb8511f43508160a403359d968c324f6ec5566edd30185b94786ff7718b.css?body=1" for 10.240.0.189 at 2016-06-01 22:47:46 +0000
+
+
+Started GET "/assets/ie10-viewport-bug-workaround.self-04e5869d2ba3db34a0e1fc661441a56fd50fd3989a32394e5a8e09320c22eb4a.css?body=1" for 10.240.0.197 at 2016-06-01 22:47:46 +0000
+
+
+Started GET "/assets/scaffolds.self-77bed466863b50f44a06b6f43397d964d274d5ec1d7aad5974e3ed329dc2bb4e.css?body=1" for 10.240.0.197 at 2016-06-01 22:47:46 +0000
+
+
+Started GET "/assets/scrolling-nav.self-a3bbef7e8bde9ef8e96ddf46180cc817ce5df552a59f81904d15f09a0cb1745f.css?body=1" for 10.240.0.186 at 2016-06-01 22:47:46 +0000
+
+
+Started GET "/assets/signin.self-c8e781e827400edc0661c7fe37e624bb0c325a2f68de9f913e85b1e71fa297d6.css?body=1" for 10.240.0.197 at 2016-06-01 22:47:46 +0000
+
+
+Started GET "/assets/welcome.self-227fd54cd43a6c427a1130e903b8c9391ad707302887aa7dc4b2e9f32f1a0c3a.css?body=1" for 10.240.0.204 at 2016-06-01 22:47:46 +0000
+
+
+Started GET "/assets/application.self-4aa04400b4d301ab6e434e640d7da5ebdac97b69e18853cb790aa8b891af3d08.css?body=1" for 10.240.0.241 at 2016-06-01 22:47:46 +0000
+
+
+Started GET "/assets/jquery.self-aedf0b4f9535e7b1d01d6a9ad81e6ecdb5b9a82acf17f3798645b7dbca2d86a1.js?body=1" for 10.240.0.179 at 2016-06-01 22:47:46 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 10.240.0.75 at 2016-06-01 22:47:46 +0000
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 10.240.0.203 at 2016-06-01 22:47:46 +0000
+
+
+Started GET "/assets/turbolinks.self-c846e670826600e8c91b1a5ada3e6547110d996cd6ff24cde55024f7a135a1b4.js?body=1" for 10.240.0.208 at 2016-06-01 22:47:46 +0000
+
+
+Started GET "/assets/ambientes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.187 at 2016-06-01 22:47:46 +0000
+
+
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for 10.240.0.200 at 2016-06-01 22:47:46 +0000
+
+
+Started GET "/assets/clientes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.186 at 2016-06-01 22:47:46 +0000
+
+
+Started GET "/assets/jquery.easing.min.self-17a01b6a2de1310e5b07a3fb735edcdccda497533463b31da3a352c81a6f3430.js?body=1" for 10.240.0.189 at 2016-06-01 22:47:46 +0000
+
+
+Started GET "/assets/scrolling-nav.self-3d5a6042f3bbecc36d4f8fbc63160a05d7335f7caeb208e6e07cfa0a707ab79f.js?body=1" for 10.240.0.186 at 2016-06-01 22:47:46 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.192 at 2016-06-01 22:47:46 +0000
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 10.240.0.186 at 2016-06-01 22:47:46 +0000
+
+
+Started GET "/stylesheets/welcome.scss.css" for 10.240.0.241 at 2016-06-01 22:47:46 +0000
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/welcome.scss.css"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.11.1) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.1) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.1) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (3.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (155.0ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for 10.240.0.186 at 2016-06-01 22:47:47 +0000
+
+
+Started GET "/assets/bootstrap" for 10.240.0.197 at 2016-06-01 22:47:47 +0000
+
+
+Started GET "/assets/bootstrap.min.self-8e2e0f28b8f446fca1121ab03f5689b5e5b48e8babcbf10b2f56ee22a11474b1.css?body=1" for 10.240.0.186 at 2016-06-01 22:47:47 +0000
+
+
+Started GET "/users/sign_in" for 10.240.0.186 at 2016-06-01 22:47:59 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/sessions/new.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 125ms (Views: 123.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 10.240.0.189 at 2016-06-01 22:47:59 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/sessions/new.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 89ms (Views: 88.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 10.240.0.200 at 2016-06-01 22:47:59 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/sessions/new.html.erb within layouts/application (19.6ms)
+Completed 200 OK in 147ms (Views: 145.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ambientes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.75 at 2016-06-01 22:48:00 +0000
+
+
+Started GET "/assets/bootstrap/ie10-viewport-bug-workaround.self-04e5869d2ba3db34a0e1fc661441a56fd50fd3989a32394e5a8e09320c22eb4a.css?body=1" for 10.240.0.110 at 2016-06-01 22:48:00 +0000
+
+
+Started GET "/assets/bootstrap/signin.self-c8e781e827400edc0661c7fe37e624bb0c325a2f68de9f913e85b1e71fa297d6.css?body=1" for 10.240.0.187 at 2016-06-01 22:48:00 +0000
+
+
+Started GET "/assets/custom.self-bc02fbb8511f43508160a403359d968c324f6ec5566edd30185b94786ff7718b.css?body=1" for 10.240.0.179 at 2016-06-01 22:48:00 +0000
+
+
+Started GET "/assets/clientes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.200 at 2016-06-01 22:48:00 +0000
+
+
+Started GET "/assets/ie10-viewport-bug-workaround.self-04e5869d2ba3db34a0e1fc661441a56fd50fd3989a32394e5a8e09320c22eb4a.css?body=1" for 10.240.0.192 at 2016-06-01 22:48:00 +0000
+
+
+Started GET "/assets/scrolling-nav.self-a3bbef7e8bde9ef8e96ddf46180cc817ce5df552a59f81904d15f09a0cb1745f.css?body=1" for 10.240.0.241 at 2016-06-01 22:48:00 +0000
+
+
+Started GET "/assets/scaffolds.self-77bed466863b50f44a06b6f43397d964d274d5ec1d7aad5974e3ed329dc2bb4e.css?body=1" for 10.240.0.110 at 2016-06-01 22:48:00 +0000
+
+
+Started GET "/assets/signin.self-c8e781e827400edc0661c7fe37e624bb0c325a2f68de9f913e85b1e71fa297d6.css?body=1" for 10.240.0.179 at 2016-06-01 22:48:00 +0000
+
+
+Started GET "/assets/welcome.self-227fd54cd43a6c427a1130e903b8c9391ad707302887aa7dc4b2e9f32f1a0c3a.css?body=1" for 10.240.0.200 at 2016-06-01 22:48:00 +0000
+
+
+Started GET "/assets/application.self-4aa04400b4d301ab6e434e640d7da5ebdac97b69e18853cb790aa8b891af3d08.css?body=1" for 10.240.0.207 at 2016-06-01 22:48:00 +0000
+
+
+Started GET "/assets/jquery.self-aedf0b4f9535e7b1d01d6a9ad81e6ecdb5b9a82acf17f3798645b7dbca2d86a1.js?body=1" for 10.240.0.241 at 2016-06-01 22:48:00 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 10.240.0.189 at 2016-06-01 22:48:00 +0000
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 10.240.0.207 at 2016-06-01 22:48:00 +0000
+
+
+Started GET "/assets/ambientes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.187 at 2016-06-01 22:48:00 +0000
+
+
+Started GET "/assets/turbolinks.self-c846e670826600e8c91b1a5ada3e6547110d996cd6ff24cde55024f7a135a1b4.js?body=1" for 10.240.0.203 at 2016-06-01 22:48:00 +0000
+
+
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for 10.240.0.187 at 2016-06-01 22:48:00 +0000
+
+
+Started GET "/assets/clientes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.241 at 2016-06-01 22:48:01 +0000
+
+
+Started GET "/assets/jquery.easing.min.self-17a01b6a2de1310e5b07a3fb735edcdccda497533463b31da3a352c81a6f3430.js?body=1" for 10.240.0.197 at 2016-06-01 22:48:01 +0000
+
+
+Started GET "/assets/scrolling-nav.self-3d5a6042f3bbecc36d4f8fbc63160a05d7335f7caeb208e6e07cfa0a707ab79f.js?body=1" for 10.240.0.189 at 2016-06-01 22:48:01 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.197 at 2016-06-01 22:48:01 +0000
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 10.240.0.179 at 2016-06-01 22:48:01 +0000
+
+
+Started GET "/stylesheets/welcome.scss.css" for 10.240.0.189 at 2016-06-01 22:48:01 +0000
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/welcome.scss.css"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.11.1) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.1) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.1) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (133.8ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for 10.240.0.207 at 2016-06-01 22:48:01 +0000
+
+
+Started GET "/assets/bootstrap" for 10.240.0.204 at 2016-06-01 22:48:01 +0000
+
+
+Started GET "/assets/bootstrap.min.self-8e2e0f28b8f446fca1121ab03f5689b5e5b48e8babcbf10b2f56ee22a11474b1.css?body=1" for 10.240.0.197 at 2016-06-01 22:48:01 +0000
+
+
+Started GET "/users/sign_up" for 10.240.0.204 at 2016-06-01 22:48:06 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered users/shared/_links.html.erb (0.4ms)
+  Rendered users/registrations/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 119ms (Views: 117.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/welcome.scss.css" for 10.240.0.197 at 2016-06-01 22:48:09 +0000
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/welcome.scss.css"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.11.1) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.1) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.1) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (158.9ms)
+
+
+Started GET "/users/sign_up" for 10.240.0.197 at 2016-06-01 22:48:58 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered users/shared/_links.html.erb (0.5ms)
+  Rendered users/registrations/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 102ms (Views: 100.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ambientes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.197 at 2016-06-01 22:48:59 +0000
+
+
+Started GET "/assets/bootstrap/ie10-viewport-bug-workaround.self-04e5869d2ba3db34a0e1fc661441a56fd50fd3989a32394e5a8e09320c22eb4a.css?body=1" for 10.240.0.197 at 2016-06-01 22:48:59 +0000
+
+
+Started GET "/assets/bootstrap/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for 10.240.0.179 at 2016-06-01 22:48:59 +0000
+
+
+Started GET "/assets/clientes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.204 at 2016-06-01 22:48:59 +0000
+
+
+Started GET "/assets/custom.self-bc02fbb8511f43508160a403359d968c324f6ec5566edd30185b94786ff7718b.css?body=1" for 10.240.0.197 at 2016-06-01 22:48:59 +0000
+
+
+Started GET "/assets/bootstrap/signin.self-c8e781e827400edc0661c7fe37e624bb0c325a2f68de9f913e85b1e71fa297d6.css?body=1" for 10.240.0.75 at 2016-06-01 22:48:59 +0000
+
+
+Started GET "/assets/ie10-viewport-bug-workaround.self-04e5869d2ba3db34a0e1fc661441a56fd50fd3989a32394e5a8e09320c22eb4a.css?body=1" for 10.240.0.197 at 2016-06-01 22:48:59 +0000
+
+
+Started GET "/assets/scaffolds.self-77bed466863b50f44a06b6f43397d964d274d5ec1d7aad5974e3ed329dc2bb4e.css?body=1" for 10.240.0.197 at 2016-06-01 22:48:59 +0000
+
+
+Started GET "/assets/scrolling-nav.self-a3bbef7e8bde9ef8e96ddf46180cc817ce5df552a59f81904d15f09a0cb1745f.css?body=1" for 10.240.0.197 at 2016-06-01 22:48:59 +0000
+
+
+Started GET "/assets/signin.self-c8e781e827400edc0661c7fe37e624bb0c325a2f68de9f913e85b1e71fa297d6.css?body=1" for 10.240.0.179 at 2016-06-01 22:48:59 +0000
+
+
+Started GET "/assets/welcome.self-227fd54cd43a6c427a1130e903b8c9391ad707302887aa7dc4b2e9f32f1a0c3a.css?body=1" for 10.240.0.206 at 2016-06-01 22:48:59 +0000
+
+
+Started GET "/assets/application.self-4aa04400b4d301ab6e434e640d7da5ebdac97b69e18853cb790aa8b891af3d08.css?body=1" for 10.240.0.197 at 2016-06-01 22:48:59 +0000
+
+
+Started GET "/assets/jquery.self-aedf0b4f9535e7b1d01d6a9ad81e6ecdb5b9a82acf17f3798645b7dbca2d86a1.js?body=1" for 10.240.0.192 at 2016-06-01 22:48:59 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 10.240.0.197 at 2016-06-01 22:48:59 +0000
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 10.240.0.192 at 2016-06-01 22:48:59 +0000
+
+
+Started GET "/assets/turbolinks.self-c846e670826600e8c91b1a5ada3e6547110d996cd6ff24cde55024f7a135a1b4.js?body=1" for 10.240.0.197 at 2016-06-01 22:48:59 +0000
+
+
+Started GET "/assets/ambientes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.192 at 2016-06-01 22:48:59 +0000
+
+
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for 10.240.0.197 at 2016-06-01 22:48:59 +0000
+
+
+Started GET "/assets/clientes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.197 at 2016-06-01 22:48:59 +0000
+
+
+Started GET "/assets/jquery.easing.min.self-17a01b6a2de1310e5b07a3fb735edcdccda497533463b31da3a352c81a6f3430.js?body=1" for 10.240.0.186 at 2016-06-01 22:48:59 +0000
+
+
+Started GET "/assets/scrolling-nav.self-3d5a6042f3bbecc36d4f8fbc63160a05d7335f7caeb208e6e07cfa0a707ab79f.js?body=1" for 10.240.0.197 at 2016-06-01 22:49:00 +0000
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 10.240.0.206 at 2016-06-01 22:49:00 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.179 at 2016-06-01 22:49:00 +0000
+
+
+Started GET "/assets/bootstrap-sprockets" for 10.240.0.192 at 2016-06-01 22:49:00 +0000
+
+
+Started GET "/assets/bootstrap" for 10.240.0.197 at 2016-06-01 22:49:00 +0000
+
+
+Started GET "/users/sign_in" for 10.240.0.75 at 2016-06-01 22:51:04 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/sessions/new.html.erb within layouts/application (25.7ms)
+Completed 200 OK in 145ms (Views: 142.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/welcome.scss.css" for 10.240.0.208 at 2016-06-01 22:51:04 +0000
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/welcome.scss.css"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.11.1) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.1) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.1) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (3.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (6.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (172.4ms)
+
+
+Started POST "/users/sign_in" for 10.240.0.197 at 2016-06-01 22:51:26 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1XEEsmcC2tJYV/B4auOxcz9o2Olkx1YSO13xyN910UaAoNZTIN4FcnFJovWyw9ohuWyyycRaZc51zrwYj4BsJg==", "user"=>{"email"=>"pedro.vinicius.batista@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "pedro.vinicius.batista@gmail.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2016-06-01 22:45:02.325213"], ["current_sign_in_at", "2016-06-01 22:51:26.209120"], ["last_sign_in_ip", "10.240.0.208"], ["current_sign_in_ip", "10.240.0.197"], ["sign_in_count", 16], ["updated_at", "2016-06-01 22:51:26.210603"], ["id", 4]]
+  [1m[35m (18.2ms)[0m  commit transaction
+Redirected to http://iothinking-es-pedroclericuzi1.c9users.io:8080/
+Completed 302 Found in 195ms (ActiveRecord: 18.9ms)
+
+
+Started GET "/" for 10.240.0.197 at 2016-06-01 22:51:26 +0000
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+Redirected to http://iothinking-es-pedroclericuzi1.c9users.io:8080/menu_index
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/menu_index" for 10.240.0.187 at 2016-06-01 22:51:26 +0000
+Processing by WelcomeController#menu_index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  Rendered welcome/menu_index.html.erb within layouts/application (25.6ms)
+Completed 200 OK in 112ms (Views: 111.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/ambientes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.197 at 2016-06-01 22:51:27 +0000
+
+
+Started GET "/assets/bootstrap/ie10-viewport-bug-workaround.self-04e5869d2ba3db34a0e1fc661441a56fd50fd3989a32394e5a8e09320c22eb4a.css?body=1" for 10.240.0.197 at 2016-06-01 22:51:27 +0000
+
+
+Started GET "/assets/bootstrap/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for 10.240.0.204 at 2016-06-01 22:51:27 +0000
+
+
+Started GET "/assets/bootstrap/signin.self-c8e781e827400edc0661c7fe37e624bb0c325a2f68de9f913e85b1e71fa297d6.css?body=1" for 10.240.0.189 at 2016-06-01 22:51:27 +0000
+
+
+Started GET "/assets/clientes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.186 at 2016-06-01 22:51:27 +0000
+
+
+Started GET "/assets/custom.self-bc02fbb8511f43508160a403359d968c324f6ec5566edd30185b94786ff7718b.css?body=1" for 10.240.0.204 at 2016-06-01 22:51:27 +0000
+
+
+Started GET "/assets/ie10-viewport-bug-workaround.self-04e5869d2ba3db34a0e1fc661441a56fd50fd3989a32394e5a8e09320c22eb4a.css?body=1" for 10.240.0.186 at 2016-06-01 22:51:27 +0000
+
+
+Started GET "/assets/scaffolds.self-77bed466863b50f44a06b6f43397d964d274d5ec1d7aad5974e3ed329dc2bb4e.css?body=1" for 10.240.0.197 at 2016-06-01 22:51:27 +0000
+
+
+Started GET "/assets/scrolling-nav.self-a3bbef7e8bde9ef8e96ddf46180cc817ce5df552a59f81904d15f09a0cb1745f.css?body=1" for 10.240.0.203 at 2016-06-01 22:51:27 +0000
+
+
+Started GET "/assets/welcome.self-227fd54cd43a6c427a1130e903b8c9391ad707302887aa7dc4b2e9f32f1a0c3a.css?body=1" for 10.240.0.197 at 2016-06-01 22:51:27 +0000
+
+
+Started GET "/assets/signin.self-c8e781e827400edc0661c7fe37e624bb0c325a2f68de9f913e85b1e71fa297d6.css?body=1" for 10.240.0.186 at 2016-06-01 22:51:27 +0000
+
+
+Started GET "/assets/application.self-4aa04400b4d301ab6e434e640d7da5ebdac97b69e18853cb790aa8b891af3d08.css?body=1" for 10.240.0.197 at 2016-06-01 22:51:27 +0000
+
+
+Started GET "/assets/jquery.self-aedf0b4f9535e7b1d01d6a9ad81e6ecdb5b9a82acf17f3798645b7dbca2d86a1.js?body=1" for 10.240.0.186 at 2016-06-01 22:51:27 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 10.240.0.206 at 2016-06-01 22:51:27 +0000
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 10.240.0.204 at 2016-06-01 22:51:27 +0000
+
+
+Started GET "/assets/turbolinks.self-c846e670826600e8c91b1a5ada3e6547110d996cd6ff24cde55024f7a135a1b4.js?body=1" for 10.240.0.200 at 2016-06-01 22:51:27 +0000
+
+
+Started GET "/assets/ambientes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.206 at 2016-06-01 22:51:27 +0000
+
+
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for 10.240.0.204 at 2016-06-01 22:51:27 +0000
+
+
+Started GET "/assets/clientes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.189 at 2016-06-01 22:51:27 +0000
+
+
+Started GET "/assets/jquery.easing.min.self-17a01b6a2de1310e5b07a3fb735edcdccda497533463b31da3a352c81a6f3430.js?body=1" for 10.240.0.204 at 2016-06-01 22:51:27 +0000
+
+
+Started GET "/assets/scrolling-nav.self-3d5a6042f3bbecc36d4f8fbc63160a05d7335f7caeb208e6e07cfa0a707ab79f.js?body=1" for 10.240.0.208 at 2016-06-01 22:51:27 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.187 at 2016-06-01 22:51:27 +0000
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 10.240.0.110 at 2016-06-01 22:51:27 +0000
+
+
+Started GET "/stylesheets/welcome.scss.css" for 10.240.0.200 at 2016-06-01 22:51:28 +0000
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/welcome.scss.css"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.11.1) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.1) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.1) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (3.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (12.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (163.0ms)
+
+
+Started GET "/css/scrolling-nav.css" for 10.240.0.204 at 2016-06-01 22:51:28 +0000
+
+ActionController::RoutingError (No route matches [GET] "/css/scrolling-nav.css"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.11.1) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.1) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.1) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (174.0ms)
+
+
+Started GET "/assets/bootstrap.min.self-8e2e0f28b8f446fca1121ab03f5689b5e5b48e8babcbf10b2f56ee22a11474b1.css?body=1" for 10.240.0.192 at 2016-06-01 22:51:28 +0000
+
+
+Started GET "/assets/bootstrap-sprockets" for 10.240.0.75 at 2016-06-01 22:51:28 +0000
+
+
+Started GET "/assets/bootstrap" for 10.240.0.197 at 2016-06-01 22:51:28 +0000
+
+
+Started GET "/assets/jquery.self-aedf0b4f9535e7b1d01d6a9ad81e6ecdb5b9a82acf17f3798645b7dbca2d86a1.js?body=1" for 10.240.0.206 at 2016-06-01 22:51:28 +0000
+
+
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for 10.240.0.186 at 2016-06-01 22:51:29 +0000
+
+
+Started GET "/assets/jquery.easing.min.self-17a01b6a2de1310e5b07a3fb735edcdccda497533463b31da3a352c81a6f3430.js?body=1" for 10.240.0.187 at 2016-06-01 22:51:29 +0000
+
+
+Started GET "/assets/scrolling-nav.self-3d5a6042f3bbecc36d4f8fbc63160a05d7335f7caeb208e6e07cfa0a707ab79f.js?body=1" for 10.240.0.110 at 2016-06-01 22:51:29 +0000
+
+
+Started DELETE "/users/sign_out" for 10.240.0.189 at 2016-06-01 22:52:04 +0000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"AdE2giM4y6G2T1F7wQDbwzY3irJQ/2u9pIImVYEKhmuVB35VlladDWCS9kGqQAnRBYhehKoJ9j8qZd221IF02A=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://iothinking-es-pedroclericuzi1.c9users.io:8080/
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 10.240.0.203 at 2016-06-01 22:52:04 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 90ms (Views: 88.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ambientes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.186 at 2016-06-01 22:52:04 +0000
+
+
+Started GET "/assets/bootstrap.min.self-8e2e0f28b8f446fca1121ab03f5689b5e5b48e8babcbf10b2f56ee22a11474b1.css?body=1" for 10.240.0.204 at 2016-06-01 22:52:04 +0000
+
+
+Started GET "/assets/bootstrap/ie10-viewport-bug-workaround.self-04e5869d2ba3db34a0e1fc661441a56fd50fd3989a32394e5a8e09320c22eb4a.css?body=1" for 10.240.0.203 at 2016-06-01 22:52:04 +0000
+
+
+Started GET "/assets/bootstrap/signin.self-c8e781e827400edc0661c7fe37e624bb0c325a2f68de9f913e85b1e71fa297d6.css?body=1" for 10.240.0.200 at 2016-06-01 22:52:04 +0000
+
+
+Started GET "/assets/bootstrap/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for 10.240.0.208 at 2016-06-01 22:52:04 +0000
+
+
+Started GET "/assets/clientes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.207 at 2016-06-01 22:52:04 +0000
+
+
+Started GET "/assets/custom.self-bc02fbb8511f43508160a403359d968c324f6ec5566edd30185b94786ff7718b.css?body=1" for 10.240.0.204 at 2016-06-01 22:52:05 +0000
+
+
+Started GET "/assets/ie10-viewport-bug-workaround.self-04e5869d2ba3db34a0e1fc661441a56fd50fd3989a32394e5a8e09320c22eb4a.css?body=1" for 10.240.0.200 at 2016-06-01 22:52:05 +0000
+
+
+Started GET "/assets/scaffolds.self-77bed466863b50f44a06b6f43397d964d274d5ec1d7aad5974e3ed329dc2bb4e.css?body=1" for 10.240.0.208 at 2016-06-01 22:52:05 +0000
+
+
+Started GET "/assets/scrolling-nav.self-a3bbef7e8bde9ef8e96ddf46180cc817ce5df552a59f81904d15f09a0cb1745f.css?body=1" for 10.240.0.204 at 2016-06-01 22:52:05 +0000
+
+
+Started GET "/assets/signin.self-c8e781e827400edc0661c7fe37e624bb0c325a2f68de9f913e85b1e71fa297d6.css?body=1" for 10.240.0.197 at 2016-06-01 22:52:05 +0000
+
+
+Started GET "/assets/welcome.self-227fd54cd43a6c427a1130e903b8c9391ad707302887aa7dc4b2e9f32f1a0c3a.css?body=1" for 10.240.0.203 at 2016-06-01 22:52:05 +0000
+
+
+Started GET "/assets/application.self-4aa04400b4d301ab6e434e640d7da5ebdac97b69e18853cb790aa8b891af3d08.css?body=1" for 10.240.0.200 at 2016-06-01 22:52:05 +0000
+
+
+Started GET "/assets/jquery.self-aedf0b4f9535e7b1d01d6a9ad81e6ecdb5b9a82acf17f3798645b7dbca2d86a1.js?body=1" for 10.240.0.208 at 2016-06-01 22:52:05 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 10.240.0.204 at 2016-06-01 22:52:05 +0000
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 10.240.0.197 at 2016-06-01 22:52:05 +0000
+
+
+Started GET "/assets/turbolinks.self-c846e670826600e8c91b1a5ada3e6547110d996cd6ff24cde55024f7a135a1b4.js?body=1" for 10.240.0.203 at 2016-06-01 22:52:05 +0000
+
+
+Started GET "/assets/ambientes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.208 at 2016-06-01 22:52:05 +0000
+
+
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for 10.240.0.204 at 2016-06-01 22:52:05 +0000
+
+
+Started GET "/assets/clientes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.203 at 2016-06-01 22:52:05 +0000
+
+
+Started GET "/assets/jquery.easing.min.self-17a01b6a2de1310e5b07a3fb735edcdccda497533463b31da3a352c81a6f3430.js?body=1" for 10.240.0.208 at 2016-06-01 22:52:05 +0000
+
+
+Started GET "/assets/scrolling-nav.self-3d5a6042f3bbecc36d4f8fbc63160a05d7335f7caeb208e6e07cfa0a707ab79f.js?body=1" for 10.240.0.204 at 2016-06-01 22:52:05 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.192 at 2016-06-01 22:52:05 +0000
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 10.240.0.203 at 2016-06-01 22:52:05 +0000
+
+
+Started GET "/assets/bootstrap-sprockets" for 10.240.0.208 at 2016-06-01 22:52:05 +0000
+
+
+Started GET "/assets/bootstrap" for 10.240.0.208 at 2016-06-01 22:52:05 +0000
+
+
+Started GET "/users/sign_in" for 10.240.0.186 at 2016-06-01 22:52:13 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/sessions/new.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 88ms (Views: 86.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/welcome.scss.css" for 10.240.0.186 at 2016-06-01 22:52:13 +0000
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/welcome.scss.css"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.11.1) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.1) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.1) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (133.5ms)
