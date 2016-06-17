@@ -134,3 +134,7 @@
     <li><%= current_user.email %></li>
     <li><%= link_to "Sair", destroy_user_session_path, method: :delete %></li>
 </ul>
+<ul>
+    <li><%= link_to 'Cadastrar ambiente', '/ambientes/new' %></li>
+    <li><%= link_to 'Meus ambientes', '/ambientes' %></li>
+</ul>
