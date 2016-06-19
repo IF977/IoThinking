@@ -27,41 +27,50 @@
     </head>
 
     <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
+    
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Ambientes</a>
+            <div class="row">
+                <div class="col-md-10">
+                    <div class="navbar-header page-scroll">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand page-scroll" href="#page-top">Ambientes</a>
+                    </div>
+        
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav">
+                            <!-- Hidden li included to remove active class from dicas link when scrolled up past dicas section -->
+                            <li class="hidden">
+                                <a class="page-scroll" href="#page-top"></a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#dicas">Dicas</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#historico">Histórico</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#comprar">Comprar</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#contact">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <p><%= current_user.email %></p>
+                    <p><%= link_to "Sair", destroy_user_session_path, method: :delete %></p>
+                </div>
             </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from dicas link when scrolled up past dicas section -->
-                    <li class="hidden">
-                        <a class="page-scroll" href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#dicas">Dicas</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#historico">Histórico</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#comprar">Comprar</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contato</a>
-                    </li>
-                </ul>
-            </div>
+            
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
@@ -75,7 +84,7 @@
                    <ul>
                         <li><%= link_to 'Cadastrar ambiente', '/ambientes/new' %></li>
                         <li><%= link_to 'Meus ambientes', '/ambientes' %></li>
-                    </ul>
+                    </ul>   
                 </div>
             </div>
         </div>
@@ -130,10 +139,6 @@
     </section>
     </body>
 </html>
-<h1>PRECISO REDIRECIONAR PARA A PÁGINA DE INICIO</h1>
     
-<ul>
-    <li><%= current_user.email %></li>
-    <li><%= link_to "Sair", destroy_user_session_path, method: :delete %></li>
-</ul>
+
 
