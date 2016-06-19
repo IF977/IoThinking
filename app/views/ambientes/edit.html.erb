@@ -1,6 +1,34 @@
-<h1>Editing Ambiente</h1>
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
+    
+    <%= stylesheet_link_tag "welcome.scss" %>
+    
+    <title>Bem vindo!</title>
 
-<%= render 'form' %>
+    <%= stylesheet_link_tag "bootstrap.min.css" %>
+    <%= stylesheet_link_tag "ie10-viewport-bug-workaround.css" %>
+    <%= stylesheet_link_tag "signin.css" %>
 
-<%= link_to 'Show', @ambiente %> |
-<%= link_to 'Back', ambientes_path %>
+  </head>
+
+  <body>
+
+    <div class="container" style="padding-top: 50px;">
+      <h2 align="center">Editando ambiente</h2>
+      <%= render 'form' %>
+      
+    </div>
+    
+    <p align="center" style="margin-top:10px;"><%= link_to 'Mostrar ambiente', @ambiente %></p>
+    <p align="center"><%= link_to 'Retornar', ambientes_path %></p>
+
+</body></html>
+
+

@@ -67,8 +67,10 @@
                     </div>
                 </div>
                 <div class="col-md-2">
+                  <div style="padding-left:14px;">
                     <p><%= current_user.email %></p>
-                    <p><%= link_to "Sair", destroy_user_session_path, method: :delete %></p>
+                  </div>
+                  <p><%= link_to "Sair", destroy_user_session_path, method: :delete, :style => "float:right;" %></p>
                 </div>
             </div>
             
