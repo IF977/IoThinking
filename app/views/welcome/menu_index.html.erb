@@ -15,6 +15,7 @@
         <%= stylesheet_link_tag "welcome.scss" %>
         <%= stylesheet_link_tag "bootstrap.min.css" %>
         <%= stylesheet_link_tag "scrolling-nav.css" %>
+        <%= stylesheet_link_tag "full-slider.css" %>
         
         <title>Bem vindo!</title>
         
@@ -95,8 +96,51 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>TEMPLATE MASSA!!!</h1>
-                    <p>ESSA É A TELA DE DICAS</p>
+                    
+                    <!-- Full Page Image Background Carousel Header -->
+                    <header id="myCarousel" class="carousel slide">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+                
+                        <!-- Wrapper for Slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <!-- Set the first background image using inline CSS below. -->
+                                <h1>teste1</h1>
+                                <div class="carousel-caption">
+                                    <h2>Caption 1</h2>
+                                    <div class="col-md-6">
+                                      <img src="/assets/images/geladeira.jpg" class="img-responsive">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <!-- Set the second background image using inline CSS below. -->
+                                <h1>teste2</h1>
+                                
+                            </div>
+                            <div class="item">
+                                <!-- Set the third background image using inline CSS below. -->
+                                
+                                <h2>Caption 3</h2>
+                            </div>
+                        </div>
+                
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <span class="icon-prev"></span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <span class="icon-next"></span>
+                        </a>
+                
+                    </header>
+                    
+                    
                 </div>
             </div>
         </div>
@@ -138,6 +182,15 @@
         </div>
     </section>
     </body>
+    
+    
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+    
 </html>
     
 

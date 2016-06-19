@@ -7,6 +7,7 @@ Rails.application.config.assets.precompile += %w( bootstrap.min.css )
 Rails.application.config.assets.precompile += %w( ie10-viewport-bug-workaround.css )
 Rails.application.config.assets.precompile += %w( signin.css )
 Rails.application.config.assets.precompile += %w( scrolling-nav.css )
+Rails.application.config.assets.precompile += %w( full-slider.css )
 
 Rails.application.config.assets.precompile += %w( jquery.easing.min.js )
 Rails.application.config.assets.precompile += %w( jquery.js )

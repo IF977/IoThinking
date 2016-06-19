@@ -1,4 +1,4 @@
-<%= form_for(@ambiente) do |f| %>
+<%= form_for(@ambiente, :html => {:class => "form-signin"}) do |f| %>
   <% if @ambiente.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@ambiente.errors.count, "error") %> prohibited this ambiente from being saved:</h2>
@@ -12,10 +12,9 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, :placeholder => "Nome do ambiente", :class => "form-control" %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Criar ambiente", :class => "btn btn-lg btn-cor-enviar pull-right", :style => "width:100%;" %>
   </div>
 <% end %>
