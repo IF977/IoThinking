@@ -10,6 +10,8 @@ class AmbientesController < ApplicationController
   # GET /ambientes/1
   # GET /ambientes/1.json
   def show
+    @received = params[:leitura]
+    #render text:"O parametro informado foi o #{@received}"
   end
 
   # GET /ambientes/new

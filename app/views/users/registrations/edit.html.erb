@@ -1,39 +1,61 @@
-<h2>Edit <%= resource_name.to_s.humanize %></h2>
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
+    
+    <%= stylesheet_link_tag "welcome.scss" %>
+    
+    <title>Bem vindo!</title>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
-  <%= devise_error_messages! %>
+    <%= stylesheet_link_tag "bootstrap.min.css" %>
+    <%= stylesheet_link_tag "ie10-viewport-bug-workaround.css" %>
+    <%= stylesheet_link_tag "signin.css" %>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
+  </head>
 
-  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
-  <% end %>
+  <body>
 
-  <div class="field">
-    <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
+    <div class="container" style="padding-top: 50px;">
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
-    <%= f.password_field :current_password, autocomplete: "off" %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Update" %>
-  </div>
-<% end %>
-
-<h3>Cancel my account</h3>
-
-<p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
-
-<%= link_to "Back", :back %>
+      <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put,:class => "form-signin" }) do |f| %>
+        <h2 class="form-signin-heading">Editar perfil</h2>
+        <%= devise_error_messages! %>
+        
+        <div class="field">
+          <%= f.email_field :email, autofocus: true, autocomplete: "off", :class => "form-control distancia", :placeholder => "E-mail"%>
+        </div>
+        
+        <div class="field">
+          <%= f.password_field :password, autocomplete: "off", :class => "form-control distancia", :placeholder => "Nova senha (mínimo de 6 caracteres)"%>
+        </div>
+        
+        <div class="field">
+          <%= f.password_field :password_confirmation, autocomplete: "off", :class => "form-control distancia", :placeholder => "Confirmação de nova senha" %>
+        </div>
+        
+        <div class="field">
+          <%= f.password_field :current_password, autocomplete: "off", :class => "form-control distancia", :placeholder => "Senha antiga"%>
+        </div>
+        
+        <div class="actions">
+          <%= f.submit "Atualizar dados", :class => "btn-tam btn-lg btn-primary btn-tam distancia", :style => "width:100%;" %>
+          <% end %>
+        </div>
+        
+        <div class="actions">
+          <p style="text-align:center;"><%= link_to "Deletar conta",registration_path(resource_name), data: { confirm: "Você tem certeza?" }, :style => "color:red", method: :delete %></p>
+        </div>
+        
+        <div class="actions">
+          <p align="center"><%= link_to 'Retornar', ambientes_path %></p>
+        </div>
+        
+      </form>
+    </div>
+  </body>
+</html>

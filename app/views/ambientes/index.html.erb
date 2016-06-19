@@ -16,6 +16,7 @@
         <%= stylesheet_link_tag "bootstrap.min.css" %>
         <%= stylesheet_link_tag "scrolling-nav.css" %>
         <%= stylesheet_link_tag "full-slider.css" %>
+        <%= stylesheet_link_tag "dropdown.css" %>
         
         <title>Bem vindo!</title>
         
@@ -68,9 +69,16 @@
                 </div>
                 <div class="col-md-2">
                   <div style="padding-left:14px;">
-                    <p><%= current_user.email %></p>
+                    
+                    
+                    <div class="dropdown">
+                      <p style="margin-top:10px;"><%= current_user.email %></p>
+                      <div class="dropdown-content">
+                        <%= link_to "Editar perfil", edit_user_registration_path%>
+                        <%= link_to "Sair", destroy_user_session_path, method: :delete%>
+                      </div>
+                    </div>
                   </div>
-                  <p><%= link_to "Sair", destroy_user_session_path, method: :delete, :style => "float:right;" %></p>
                 </div>
             </div>
             
@@ -136,11 +144,13 @@
                         <div class="carousel-inner">
                             <div class="item active">
                                 <!-- Set the first background image using inline CSS below. -->
-                                <h1>teste1</h1>
                                 <div class="carousel-caption">
-                                    <h2>Caption 1</h2>
+                                    
                                     <div class="col-md-6">
                                       <img src="/assets/geladeira.jpg" class="img-responsive">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h2>Caption 1</h2>
                                     </div>
                                 </div>
                             </div>
