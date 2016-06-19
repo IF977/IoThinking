@@ -1,39 +1,51 @@
-<div class="row">
-  <div class="col-md-6 col-md-offset-3">
-
-  <h2>Sign up</h2>
-
-  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-    <%= devise_error_messages! %>
-  
-    <div class="field">
-      <%= f.label :name %><br />
-      <%= f.email_field :name, autofocus: true %>
-    </div>
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
-    <div class="field">
-      <%= f.label :email %><br />
-      <%= f.email_field :email, autofocus: true %>
-    </div>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
+    
+    <%= stylesheet_link_tag "welcome.scss" %>
+    
+    <title>Bem vindo!</title>
 
-    <div class="field">
-      <%= f.label :password %>
-      <% if @minimum_password_length %>
-      <em>(<%= @minimum_password_length %> characters minimum)</em>
-      <% end %><br />
-      <%= f.password_field :password, autocomplete: "off" %>
-    </div>
+    <%= stylesheet_link_tag "bootstrap.min.css" %>
+    <%= stylesheet_link_tag "ie10-viewport-bug-workaround.css" %>
+    <%= stylesheet_link_tag "signin.css" %>
 
-    <div class="field">
-      <%= f.label :password_confirmation %><br />
-      <%= f.password_field :password_confirmation, autocomplete: "off" %>
-    </div>
+  </head>
 
-    <div class="actions">
-      <%= f.submit "Sign up" %>
-      <% end %>
-    </div>
-  <%= render "users/shared/links" %>
+  <body>
 
-  </div>
-</div>
+    <div class="container" style="padding-top: 50px;">
+
+      <%= form_for(resource,:html => {:class => "form-signin"},as: resource_name, url: registration_path(resource_name)) do |f| %>
+        <h2 class="form-signin-heading">Cadastre-se</h2>
+        <%= devise_error_messages! %>
+        <input type="text" id="inputNome" class="form-control distancia" placeholder="Nome(ainda fora do banco)" required="" autofocus="" name="nome">
+        <div class="field">
+          <%= f.email_field :email, autofocus: true, autocomplete: "off", :class => "form-control distancia", :placeholder => "E-mail"%>
+        </div>
+        
+        <div class="field">
+          <%= f.password_field :password, autocomplete: "off", :class => "form-control distancia", :placeholder => "Senha (mínimo de 6 caracteres)"%>
+        </div>
+        
+        <div class="field">
+          <%= f.password_field :password_confirmation, autocomplete: "off", :class => "form-control distancia", :placeholder => "Confirmação de senha" %>
+        </div>
+        
+        <input type="text" id="companhia" class="form-control distancia" placeholder="Companhia elétrica(ainda fora do banco)" name="companhia">
+        
+        <div class="actions">
+          <%= f.submit "Cadastrar", :class => "btn-tam btn-lg btn-primary btn-tam distancia", :style => "width:100%;" %>
+          <% end %>
+        </div>
+        
+      </form>
+    </div>
+  </body>
+</html>

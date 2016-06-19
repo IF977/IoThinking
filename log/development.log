@@ -28684,3 +28684,91 @@ Processing by Devise::RegistrationsController#new as HTML
   Rendered users/shared/_links.html.erb (5.7ms)
   Rendered users/registrations/new.html.erb within layouts/application (15.1ms)
 Completed 200 OK in 124ms (Views: 122.1ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to AddNameToUsers (20160619043414)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  CREATE TEMPORARY TABLE "ausers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "name" varchar) 
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  CREATE UNIQUE INDEX "tindex_ausers_on_reset_password_token" ON "ausers" ("reset_password_token")
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "tindex_ausers_on_email" ON "ausers" ("email")[0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "users"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "ausers" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","sign_in_count","current_sign_in_at","last_sign_in_at","current_sign_in_ip","last_sign_in_ip","created_at","updated_at","name") VALUES (1, 'admin@example.com', '$2a$11$ySKcc/EhveYYOil3cI1c2OliPgDpqM7sdeR82kU5zm/B9g4h6uVhG', NULL, NULL, NULL, 3, '2016-05-22 17:24:16.165701', '2016-05-22 17:23:40.180656', '10.240.0.157', '10.240.0.75', '2016-05-22 17:22:06.040583', '2016-05-22 17:24:16.167553', NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "ausers" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","sign_in_count","current_sign_in_at","last_sign_in_at","current_sign_in_ip","last_sign_in_ip","created_at","updated_at","name") VALUES (2, 'ex102@example.com', '$2a$11$94A5ZUUOJIXNw8r2WpzdS.RNZFRN7gVsTCOxQKQFuB0W3VFG.aF6i', NULL, NULL, NULL, 2, '2016-05-28 20:17:54.373477', '2016-05-28 20:14:52.242559', '10.240.0.179', '10.240.0.200', '2016-05-28 20:14:52.210487', '2016-05-28 20:17:54.376301', NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "ausers" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","sign_in_count","current_sign_in_at","last_sign_in_at","current_sign_in_ip","last_sign_in_ip","created_at","updated_at","name") VALUES (3, 'ex103@example.com', '$2a$11$mnEF3v6AtDrfoEMnAjkLyeA.pWqm.01E270NzRWIickUSyJSOKfcG', NULL, NULL, NULL, 1, '2016-05-28 20:18:33.568498', '2016-05-28 20:18:33.568498', '10.240.0.200', '10.240.0.200', '2016-05-28 20:18:33.548514', '2016-05-28 20:18:33.569712', NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "ausers" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","sign_in_count","current_sign_in_at","last_sign_in_at","current_sign_in_ip","last_sign_in_ip","created_at","updated_at","name") VALUES (4, 'pedro.vinicius.batista@gmail.com', '$2a$11$uq/1s/Dt2cqJ99qk8wkC7ughWH23xxbW5u72ZJVVAzNsG4s9cAqb6', 'dc5f241bab0590536a553eaff532b1b053d5ad3b779ae3ffc6928088afbda936', '2016-05-30 02:59:21.937576', NULL, 16, '2016-06-01 22:51:26.209120', '2016-06-01 22:45:02.325213', '10.240.0.197', '10.240.0.208', '2016-05-30 02:59:05.992314', '2016-06-01 22:51:26.210603', NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "ausers" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","sign_in_count","current_sign_in_at","last_sign_in_at","current_sign_in_ip","last_sign_in_ip","created_at","updated_at","name") VALUES (5, 'teste@teste', '$2a$11$CUyiW6OLO.39BcTksUWwKuiReF4iCR9L3gO3/CAamoetVNabh1lDS', NULL, NULL, NULL, 1, '2016-05-31 04:00:23.651553', '2016-05-31 04:00:23.651553', '10.240.0.204', '10.240.0.204', '2016-05-31 04:00:23.630534', '2016-05-31 04:00:23.652973', NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "ausers" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","sign_in_count","current_sign_in_at","last_sign_in_at","current_sign_in_ip","last_sign_in_ip","created_at","updated_at","name") VALUES (6, 'teste@teste.com', '$2a$11$SHKtPWFRIRehVU9BmktWbeAUAGPhMnPuJHlosMh1cJRhm.SzPBStC', NULL, NULL, NULL, 1, '2016-06-15 22:39:25.260232', '2016-06-15 22:39:25.260232', '10.240.0.207', '10.240.0.207', '2016-06-15 22:39:25.240306', '2016-06-15 22:39:25.262598', NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "ausers" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","sign_in_count","current_sign_in_at","last_sign_in_at","current_sign_in_ip","last_sign_in_ip","created_at","updated_at","name") VALUES (7, 'admin@admin.com', '$2a$11$NUfEkfGTVkWmVF3exxZU0eCctp33WwBo2fuU1gxBWNazj.8YJPnFu', NULL, NULL, NULL, 1, '2016-06-17 18:33:28.451378', '2016-06-17 18:33:28.451378', '10.240.0.241', '10.240.0.241', '2016-06-17 18:33:28.401767', '2016-06-17 18:33:28.455446', NULL)[0m
+  [1m[35m (0.4ms)[0m  DROP TABLE "users"
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_ausers_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_ausers_on_email' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_ausers_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_ausers_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.5ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  CREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "ausers"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "users" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","sign_in_count","current_sign_in_at","last_sign_in_at","current_sign_in_ip","last_sign_in_ip","created_at","updated_at") VALUES (1, 'admin@example.com', '$2a$11$ySKcc/EhveYYOil3cI1c2OliPgDpqM7sdeR82kU5zm/B9g4h6uVhG', NULL, NULL, NULL, 3, '2016-05-22 17:24:16.165701', '2016-05-22 17:23:40.180656', '10.240.0.157', '10.240.0.75', '2016-05-22 17:22:06.040583', '2016-05-22 17:24:16.167553')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "users" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","sign_in_count","current_sign_in_at","last_sign_in_at","current_sign_in_ip","last_sign_in_ip","created_at","updated_at") VALUES (2, 'ex102@example.com', '$2a$11$94A5ZUUOJIXNw8r2WpzdS.RNZFRN7gVsTCOxQKQFuB0W3VFG.aF6i', NULL, NULL, NULL, 2, '2016-05-28 20:17:54.373477', '2016-05-28 20:14:52.242559', '10.240.0.179', '10.240.0.200', '2016-05-28 20:14:52.210487', '2016-05-28 20:17:54.376301')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "users" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","sign_in_count","current_sign_in_at","last_sign_in_at","current_sign_in_ip","last_sign_in_ip","created_at","updated_at") VALUES (3, 'ex103@example.com', '$2a$11$mnEF3v6AtDrfoEMnAjkLyeA.pWqm.01E270NzRWIickUSyJSOKfcG', NULL, NULL, NULL, 1, '2016-05-28 20:18:33.568498', '2016-05-28 20:18:33.568498', '10.240.0.200', '10.240.0.200', '2016-05-28 20:18:33.548514', '2016-05-28 20:18:33.569712')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "users" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","sign_in_count","current_sign_in_at","last_sign_in_at","current_sign_in_ip","last_sign_in_ip","created_at","updated_at") VALUES (4, 'pedro.vinicius.batista@gmail.com', '$2a$11$uq/1s/Dt2cqJ99qk8wkC7ughWH23xxbW5u72ZJVVAzNsG4s9cAqb6', 'dc5f241bab0590536a553eaff532b1b053d5ad3b779ae3ffc6928088afbda936', '2016-05-30 02:59:21.937576', NULL, 16, '2016-06-01 22:51:26.209120', '2016-06-01 22:45:02.325213', '10.240.0.197', '10.240.0.208', '2016-05-30 02:59:05.992314', '2016-06-01 22:51:26.210603')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "users" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","sign_in_count","current_sign_in_at","last_sign_in_at","current_sign_in_ip","last_sign_in_ip","created_at","updated_at") VALUES (5, 'teste@teste', '$2a$11$CUyiW6OLO.39BcTksUWwKuiReF4iCR9L3gO3/CAamoetVNabh1lDS', NULL, NULL, NULL, 1, '2016-05-31 04:00:23.651553', '2016-05-31 04:00:23.651553', '10.240.0.204', '10.240.0.204', '2016-05-31 04:00:23.630534', '2016-05-31 04:00:23.652973')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "users" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","sign_in_count","current_sign_in_at","last_sign_in_at","current_sign_in_ip","last_sign_in_ip","created_at","updated_at") VALUES (6, 'teste@teste.com', '$2a$11$SHKtPWFRIRehVU9BmktWbeAUAGPhMnPuJHlosMh1cJRhm.SzPBStC', NULL, NULL, NULL, 1, '2016-06-15 22:39:25.260232', '2016-06-15 22:39:25.260232', '10.240.0.207', '10.240.0.207', '2016-06-15 22:39:25.240306', '2016-06-15 22:39:25.262598')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "users" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","sign_in_count","current_sign_in_at","last_sign_in_at","current_sign_in_ip","last_sign_in_ip","created_at","updated_at") VALUES (7, 'admin@admin.com', '$2a$11$NUfEkfGTVkWmVF3exxZU0eCctp33WwBo2fuU1gxBWNazj.8YJPnFu', NULL, NULL, NULL, 1, '2016-06-17 18:33:28.451378', '2016-06-17 18:33:28.451378', '10.240.0.241', '10.240.0.241', '2016-06-17 18:33:28.401767', '2016-06-17 18:33:28.455446')
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "ausers"[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?  [["version", "20160619043414"]]
+  [1m[36m (34.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
