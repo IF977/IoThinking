@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160619043414) do
+ActiveRecord::Schema.define(version: 20160620211458) do
 
   create_table "ambientes", force: :cascade do |t|
     t.string   "name"
@@ -40,9 +40,11 @@ ActiveRecord::Schema.define(version: 20160619043414) do
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
     t.string   "name"
+    t.string   "username"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  add_index "users", ["username"], name: "index_users_on_username", unique: true
 
 end

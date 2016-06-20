@@ -25,7 +25,11 @@
       <%= form_for(resource,:html => {:class => "form-signin"},as: resource_name, url: registration_path(resource_name)) do |f| %>
         <h2 class="form-signin-heading">Cadastre-se</h2>
         <%= devise_error_messages! %>
-        <input type="text" id="inputNome" class="form-control distancia" placeholder="Nome(ainda fora do banco)" required="" autofocus="" name="nome">
+
+        <div class="field">
+          <%= f.text_field :username, autocomplete: "off", :class => "form-control distancia", :placeholder => "Nome"%>
+        </div>
+        
         <div class="field">
           <%= f.email_field :email, autofocus: true, autocomplete: "off", :class => "form-control distancia", :placeholder => "E-mail"%>
         </div>
