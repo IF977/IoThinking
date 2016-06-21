@@ -5,12 +5,18 @@ class AmbientesController < ApplicationController
   # GET /ambientes.json
   def index
     @ambientes = Ambiente.all
+    
+    #@received = params[:leitura]
+    #render text:"O metro informado foi o #{@received}"
+    # arq = File.open("abrir.txt", "w")
+    # arq.write(@received)
+    # arq.close
   end
 
   # GET /ambientes/1
   # GET /ambientes/1.json
   def show
-    @received = params[:leitura]
+    @received = "R$ 0,01"
     #render text:"O parametro informado foi o #{@received}"
   end
 
