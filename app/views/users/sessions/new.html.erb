@@ -25,7 +25,7 @@
       <%= form_for(resource, :html => {:class => "form-signin"}, as: resource_name, url: session_path(resource_name)) do |f| %>
 
         <div class="field">
-          <%= f.email_field :email, autofocus: true, autocomplete: "off", :class => "form-control", :placeholder => "E-mail"%>
+          <%= f.text_field :login, autofocus: true, autocomplete: "off", :class => "form-control", :placeholder => "E-mail / usuario"%>
         </div>
       
         <div class="field" style="margin-top:-11px;">
